@@ -9,8 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style-new.css">
+    <link rel="stylesheet" href="css/premium-enhancements.css">
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" defer></script>
     <script src="js/script-new.js" defer></script>
+    <script src="js/premium-effects.js" defer></script>
 </head>
 <body>
     <!-- Preloader -->
@@ -66,12 +68,12 @@
 
     <!-- Hero Section -->
     <section class="hero" id="home">
-        <div class="hero-bg"></div>
+        <div class="hero-bg" data-parallax="0.3"></div>
         <div class="hero-gradient"></div>
         
-        <div class="floating-shape shape-1"></div>
-        <div class="floating-shape shape-2"></div>
-        <div class="floating-shape shape-3"></div>
+        <div class="floating-shape shape-1" data-parallax="0.5"></div>
+        <div class="floating-shape shape-2" data-parallax="0.7"></div>
+        <div class="floating-shape shape-3" data-parallax="0.4"></div>
         
         <div class="container hero-container">
             <div class="hero-content">
@@ -96,8 +98,7 @@
                 </div>
                 
                 <p class="hero-description">
-                    12 horas de imersão total com estratégias práticas, tecnologia de ponta e networking de alto nível para empresários e profissionais do setor automotivo.
-                </p>
+                    O primeiro e maior evento para profissionais em manutenção de caminhões da linha Volvo
                 
                 <!-- Ticket Preview -->
                 <div class="ticket-preview" data-aos="zoom-in" data-aos-delay="200">
@@ -145,32 +146,99 @@
         <div class="container">
             <div class="intro-content" data-aos="fade-up">
                 <h2 class="intro-title">
-                    Transforme a Gestão da Sua Oficina em <span class="gradient-text">12 Horas de Imersão Total</span>
+                    O Sucesso do seu futuro está aqui!<br>
+                    <span class="gradient-text">12 Horas de Imersão Total</span>
                 </h2>
                 <p class="intro-text">
-                    O <strong>Imersão Volmaster Tech</strong> é mais do que um evento: é um divisor de águas para empresários, gestores e profissionais do setor automotivo que querem <strong>sair da estagnação e alcançar um novo patamar</strong>.
-                </p>
-                <p class="intro-text">
-                    Durante <strong>12 horas intensas</strong>, você vai descobrir as estratégias exatas que transformam oficinas comuns em negócios de referência. Vamos mostrar como usar a tecnologia a seu favor, otimizar processos, aumentar a lucratividade e construir uma operação que funciona de forma previsível e escalável.
-                </p>
-                <p class="intro-text">
-                    Se você sente que trabalha muito e não vê os resultados que merece, se percebe o mercado mudando enquanto você fica para trás, ou se sabe que tem potencial mas não sabe como destravar o próximo nível — <strong>este evento foi feito para você</strong>.
+                    O primeiro evento totalmente pensado e voltado para atender as demandas de <strong class="text-highlight">empresários, donos de oficinas mecânicas e profissionais da manutenção da linha pesada Volvo</strong>.
                 </p>
                 
-                <div class="cta-box" data-aos="fade-up" data-aos-delay="100">
-                    <div class="cta-highlight">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                <div class="intro-benefits">
+                    <p class="benefit-item">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 0L12.2451 7.75486H20L13.8775 12.7451L16.1225 20L10 15.0098L3.87746 20L6.12254 12.7451L0 7.75486H7.75486L10 0Z" fill="#FFD700"/>
                         </svg>
-                        <span>Últimas Vagas Disponíveis</span>
+                        <strong>Trabalhe menos e ganhe mais.</strong>
+                    </p>
+                    <p class="benefit-item">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 0L12.2451 7.75486H20L13.8775 12.7451L16.1225 20L10 15.0098L3.87746 20L6.12254 12.7451L0 7.75486H7.75486L10 0Z" fill="#FFD700"/>
+                        </svg>
+                        <strong>Lidere sua equipe de maneira eficaz.</strong>
+                    </p>
+                    <p class="benefit-item">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 0L12.2451 7.75486H20L13.8775 12.7451L16.1225 20L10 15.0098L3.87746 20L6.12254 12.7451L0 7.75486H7.75486L10 0Z" fill="#FFD700"/>
+                        </svg>
+                        <strong>Seja o mentor do seu negócio.</strong>
+                    </p>
+                    <p class="benefit-item">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 0L12.2451 7.75486H20L13.8775 12.7451L16.1225 20L10 15.0098L3.87746 20L6.12254 12.7451L0 7.75486H7.75486L10 0Z" fill="#FFD700"/>
+                        </svg>
+                        <strong>Tenha qualidade de vida!</strong>
+                    </p>
+                </div>
+
+                <h3 class="intro-subtitle" data-aos="fade-up" data-aos-delay="200">
+                    Idealizamos esse evento para sua empresa:
+                </h3>
+
+                <ul class="intro-goals" data-aos="fade-up" data-aos-delay="300">
+                    <li class="goal-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        <span>Sair do amadorismo</span>
+                    </li>
+                    <li class="goal-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        <span>Exercer excelência</span>
+                    </li>
+                    <li class="goal-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        <span>Ser vista</span>
+                    </li>
+                    <li class="goal-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        <span>Se tornar autoridade</span>
+                    </li>
+                    <li class="goal-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        <span>Fazer parte de algo maior</span>
+                    </li>
+                    <li class="goal-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        <span>Se manter nesse lugar e avançar sempre! Nunca reduzir!</span>
+                    </li>
+                </ul>
+                
+                <div class="intro-cta-section" data-aos="fade-up" data-aos-delay="100">
+                    <div class="ticket-preview-intro">
+                        <a href="ingressos-novo.html" class="ticket-link">
+                            <img src="images/ticket evento.jpg" alt="Ingresso Imersão Volmaster Tech" class="ticket-image">
+                            <div class="ticket-overlay">
+                                <div class="ticket-badge">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                    </svg>
+                                    <span>Últimas Vagas</span>
+                                </div>
+                                <span class="ticket-cta-text">Clique Para Garantir Seu Ingresso</span>
+                            </div>
+                        </a>
                     </div>
-                    <a href="ingressos-novo.html" class="btn-primary btn-large">
-                        Quero Meu Ingresso Agora
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                            <path d="M4 10h12M12 6l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </a>
                 </div>
             </div>
         </div>
@@ -200,33 +268,29 @@
                     </div>
                     
                     <div class="checklist-items">
-                        <div class="checklist-item blue-check">
-                            <div class="checkbox"></div>
-                            <div class="checklist-line">Você que criou sua empresa do zero</div>
+                        <div class="checklist-item yellow-flag">
+                            <span class="check-icon">✅</span>
+                            <div class="checklist-line yellow-text">Você que criou sua empresa do zero</div>
                         </div>
-                        <div class="checklist-item blue-check">
-                            <div class="checkbox"></div>
-                            <div class="checklist-line">Cresceu muito e tem dificuldades na administração</div>
+                        <div class="checklist-item yellow-flag">
+                            <span class="check-icon">✅</span>
+                            <div class="checklist-line yellow-text">Cresceu muito e tem dificuldades na administração</div>
                         </div>
-                        <div class="checklist-item blue-check">
-                            <div class="checkbox"></div>
-                            <div class="checklist-line">Sente que precisa avançar, ir para um novo nível</div>
+                        <div class="checklist-item yellow-flag">
+                            <span class="check-icon">✅</span>
+                            <div class="checklist-line yellow-text">Sente que precisa avançar, ir para um novo nível</div>
                         </div>
-                        <div class="checklist-item blue-check">
-                            <div class="checkbox"></div>
-                            <div class="checklist-line">Sabe que o que te trouxe até aqui não é suficiente para te levar além</div>
+                        <div class="checklist-item yellow-flag">
+                            <span class="check-icon">✅</span>
+                            <div class="checklist-line yellow-text">Sabe que o que te trouxe até aqui não é suficiente para te levar além</div>
                         </div>
-                        <div class="checklist-item blue-check">
-                            <div class="checkbox"></div>
-                            <div class="checklist-line">Está vendo o mercado mudar e você está estagnado</div>
+                        <div class="checklist-item yellow-flag">
+                            <span class="check-icon">✅</span>
+                            <div class="checklist-line yellow-text">Está vendo o mercado mudar e você está estagnado</div>
                         </div>
-                        <div class="checklist-item">
-                            <div class="checkbox"></div>
-                            <div class="checklist-line">Sabe que tem potencial e deseja ver sua empresa sendo referência</div>
-                        </div>
-                        <div class="checklist-item">
-                            <div class="checkbox"></div>
-                            <div class="checklist-line"></div>
+                        <div class="checklist-item yellow-flag">
+                            <span class="check-icon">✅</span>
+                            <div class="checklist-line yellow-text">Sabe que tem potencial e deseja ver sua empresa sendo referência</div>
                         </div>
                     </div>
                 </div>
@@ -243,33 +307,33 @@
                     </div>
                     
                     <div class="checklist-items">
-                        <div class="checklist-item">
-                            <div class="checkbox"></div>
-                            <div class="checklist-line">Você que é um ótimo profissional, mas trabalha muito e ganha pouco</div>
+                        <div class="checklist-item yellow-flag">
+                            <span class="check-icon">✅</span>
+                            <div class="checklist-line yellow-text">Você que é um ótimo profissional, mas trabalha muito e ganha pouco</div>
                         </div>
-                        <div class="checklist-item">
-                            <div class="checkbox"></div>
-                            <div class="checklist-line">Você que busca ser o melhor na sua área de atuação</div>
+                        <div class="checklist-item yellow-flag">
+                            <span class="check-icon">✅</span>
+                            <div class="checklist-line yellow-text">Você que busca ser o melhor na sua área de atuação</div>
                         </div>
-                        <div class="checklist-item">
-                            <div class="checkbox"></div>
-                            <div class="checklist-line">Você que é o principal interessado no seu crescimento profissional</div>
+                        <div class="checklist-item yellow-flag">
+                            <span class="check-icon">✅</span>
+                            <div class="checklist-line yellow-text">Você que é o principal interessado no seu crescimento profissional</div>
                         </div>
-                        <div class="checklist-item">
-                            <div class="checkbox"></div>
-                            <div class="checklist-line">Você que não quer ficar parado no tempo e deseja acompanhar as evoluções</div>
+                        <div class="checklist-item yellow-flag">
+                            <span class="check-icon">✅</span>
+                            <div class="checklist-line yellow-text">Você que não quer ficar parado no tempo e deseja acompanhar as evoluções</div>
                         </div>
-                        <div class="checklist-item">
-                            <div class="checkbox"></div>
-                            <div class="checklist-line">Você que quer trabalhar menos e ganhar mais</div>
+                        <div class="checklist-item yellow-flag">
+                            <svg class="flag-icon" width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M4 2v16M4 3h11l-2 5 2 5H4"/>
+                            </svg>
+                            <div class="checklist-line yellow-text">Você que quer trabalhar menos e ganhar mais</div>
                         </div>
-                        <div class="checklist-item">
-                            <div class="checkbox"></div>
-                            <div class="checklist-line">Você que sabe que o mundo é dos espertos, mas o mercado é dos que avançam</div>
-                        </div>
-                        <div class="checklist-item">
-                            <div class="checkbox"></div>
-                            <div class="checklist-line"></div>
+                        <div class="checklist-item yellow-flag">
+                            <svg class="flag-icon" width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M4 2v16M4 3h11l-2 5 2 5H4"/>
+                            </svg>
+                            <div class="checklist-line yellow-text">Você que sabe que o mundo é dos espertos, mas o mercado é dos que avançam</div>
                         </div>
                     </div>
                 </div>
@@ -290,7 +354,7 @@
                             <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
                         </svg>
                     </div>
-                    <div class="stat-number" data-target="500">0</div>
+                    <div class="stat-number" data-target="1000" data-count="1000">0</div>
                     <div class="stat-label">Participantes Esperados</div>
                 </div>
                 
@@ -300,8 +364,8 @@
                             <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
                         </svg>
                     </div>
-                    <div class="stat-number" data-target="20">0</div>
-                    <div class="stat-label">Palestrantes Expert</div>
+                    <div class="stat-number" data-target="8" data-count="8">0</div>
+                    <div class="stat-label">Palestrantes</div>
                 </div>
                 
                 <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
@@ -313,7 +377,7 @@
                             <line x1="3" y1="10" x2="21" y2="10"></line>
                         </svg>
                     </div>
-                    <div class="stat-number" data-target="12">0</div>
+                    <div class="stat-number" data-target="12" data-count="12">0</div>
                     <div class="stat-label">Horas de Conteúdo</div>
                 </div>
                 
@@ -324,7 +388,7 @@
                             <polyline points="22 4 12 14.01 9 11.01"></polyline>
                         </svg>
                     </div>
-                    <div class="stat-number" data-target="100">0</div>
+                    <div class="stat-number" data-target="100" data-count="100">0</div>
                     <div class="stat-label">% Networking</div>
                 </div>
             </div>
@@ -343,7 +407,7 @@
             </div>
 
             <div class="benefits-grid">
-                <div class="benefit-card" data-aos="fade-up" data-aos-delay="0">
+                <div class="benefit-card fade-in-bounce" data-aos="fade-up" data-aos-delay="0">
                     <div class="benefit-number">01</div>
                     <div class="benefit-icon">
                         <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -357,7 +421,7 @@
                     </p>
                 </div>
 
-                <div class="benefit-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="benefit-card fade-in-bounce" data-aos="fade-up" data-aos-delay="100">
                     <div class="benefit-number">02</div>
                     <div class="benefit-icon">
                         <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -373,7 +437,7 @@
                     </p>
                 </div>
 
-                <div class="benefit-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="benefit-card fade-in-bounce" data-aos="fade-up" data-aos-delay="200">
                     <div class="benefit-number">03</div>
                     <div class="benefit-icon">
                         <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -386,7 +450,7 @@
                     </p>
                 </div>
 
-                <div class="benefit-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="benefit-card fade-in-bounce" data-aos="fade-up" data-aos-delay="300">
                     <div class="benefit-number">04</div>
                     <div class="benefit-icon">
                         <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -400,7 +464,7 @@
                     </p>
                 </div>
 
-                <div class="benefit-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="benefit-card fade-in-bounce" data-aos="fade-up" data-aos-delay="400">
                     <div class="benefit-number">05</div>
                     <div class="benefit-icon">
                         <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -413,7 +477,7 @@
                     </p>
                 </div>
 
-                <div class="benefit-card" data-aos="fade-up" data-aos-delay="500">
+                <div class="benefit-card fade-in-bounce" data-aos="fade-up" data-aos-delay="500">
                     <div class="benefit-number">06</div>
                     <div class="benefit-icon">
                         <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -442,7 +506,7 @@
                 </p>
             </div>
             <div class="speakers-grid">
-                <div class="speaker-card" data-aos="fade-up" data-aos-delay="0">
+                <div class="speaker-card fade-in-bounce" data-aos="fade-up" data-aos-delay="0">
                     <div class="speaker-image">
                         <img src="images/evento 1.jpeg" alt="Alan Campos" loading="lazy">
                         <div class="speaker-overlay"></div>
@@ -452,7 +516,7 @@
                         <p class="speaker-role">Instrutor Técnico</p>
                     </div>
                 </div>
-                <div class="speaker-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="speaker-card fade-in-bounce" data-aos="fade-up" data-aos-delay="100">
                     <div class="speaker-image">
                         <img src="images/evento 3 Kezia.jpg" alt="Kezia Campos" loading="lazy">
                         <div class="speaker-overlay"></div>
@@ -462,7 +526,7 @@
                         <p class="speaker-role">A definir</p>
                     </div>
                 </div>
-                <div class="speaker-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="speaker-card fade-in-bounce" data-aos="fade-up" data-aos-delay="200">
                     <div class="speaker-image">
                         <img src="images/palestrante lais.jpeg" alt="Dr. Lais Torres" loading="lazy">
                         <div class="speaker-overlay"></div>
@@ -472,7 +536,7 @@
                         <p class="speaker-role">Advogada especializada em oficinas de caminhão</p>
                     </div>
                 </div>
-                <div class="speaker-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="speaker-card fade-in-bounce" data-aos="fade-up" data-aos-delay="300">
                     <div class="speaker-image">
                         <img src="images/palestrante bruno.jpeg" alt="Dr. Alex Brunno" loading="lazy">
                         <div class="speaker-overlay"></div>
@@ -499,45 +563,52 @@
             <div class="schedule-date" data-aos="fade-up">12 Setembro 2026</div>
             <div class="schedule-content" id="scheduleContent">
                 <div class="schedule-item" data-aos="fade-up" data-aos-delay="0">
-                    <div class="schedule-time">09:00 - 10:00</div>
+                    <div class="schedule-time">08:00 - 08:30</div>
                     <div class="schedule-details">
                         <h4>Abertura e Credenciamento</h4>
                         <p>Recepção dos participantes e entrega de materiais</p>
                     </div>
                 </div>
                 <div class="schedule-item" data-aos="fade-up" data-aos-delay="100">
-                    <div class="schedule-time">10:00 - 11:30</div>
+                    <div class="schedule-time">09:00 - 10:00</div>
                     <div class="schedule-details">
-                        <h4>Palestra Principal</h4>
-                        <p>Conteúdo a ser definido</p>
+                        <h4>Palestra Alan Volmaster</h4>
+                        <p>Conteúdo exclusivo com Alan Volmaster</p>
                     </div>
                 </div>
                 <div class="schedule-item" data-aos="fade-up" data-aos-delay="200">
-                    <div class="schedule-time">11:30 - 13:00</div>
+                    <div class="schedule-time">10:00 - 10:30</div>
                     <div class="schedule-details">
-                        <h4>Workshop Técnico</h4>
-                        <p>Conteúdo a ser definido</p>
+                        <h4>Convidados</h4>
+                        <p>Apresentações especiais dos convidados</p>
                     </div>
                 </div>
                 <div class="schedule-item" data-aos="fade-up" data-aos-delay="300">
-                    <div class="schedule-time">13:00 - 14:00</div>
+                    <div class="schedule-time">11:00 - 12:00</div>
                     <div class="schedule-details">
-                        <h4>Intervalo e Networking</h4>
-                        <p>Momento para networking e alimentação</p>
+                        <h4>Workshop práticas</h4>
+                        <p>Práticas e técnicas para aplicação imediata</p>
                     </div>
                 </div>
                 <div class="schedule-item" data-aos="fade-up" data-aos-delay="400">
-                    <div class="schedule-time">14:00 - 16:00</div>
+                    <div class="schedule-time">12:00 - 14:00</div>
                     <div class="schedule-details">
-                        <h4>Painéis de Discussão</h4>
-                        <p>Debates com especialistas da área</p>
+                        <h4>Networking e almoço</h4>
+                        <p>Momento de conexão com outros profissionais</p>
                     </div>
                 </div>
                 <div class="schedule-item" data-aos="fade-up" data-aos-delay="500">
-                    <div class="schedule-time">16:00 - 18:00</div>
+                    <div class="schedule-time">14:00 - 15:00</div>
                     <div class="schedule-details">
-                        <h4>Encerramento e Sorteios</h4>
-                        <p>Considerações finais e premiações</p>
+                        <h4>Palestra Convidados</h4>
+                        <p>Conteúdos especiais com palestrantes convidados</p>
+                    </div>
+                </div>
+                <div class="schedule-item" data-aos="fade-up" data-aos-delay="600">
+                    <div class="schedule-time">17:00 - 18:00</div>
+                    <div class="schedule-details">
+                        <h4>Alan responde ao vivo</h4>
+                        <p>Sessão interativa de perguntas e respostas</p>
                     </div>
                 </div>
             </div>
@@ -732,7 +803,7 @@
             </div>
 
             <div class="gallery-grid">
-                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="0">
+                <div class="gallery-item fade-in-bounce" data-aos="zoom-in" data-aos-delay="0">
                     <img src="images/evento 1.jpeg" alt="Momento do Evento" loading="lazy">
                     <div class="gallery-overlay">
                         <div class="gallery-icon">
@@ -746,7 +817,7 @@
                     </div>
                 </div>
 
-                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+                <div class="gallery-item fade-in-bounce" data-aos="zoom-in" data-aos-delay="100">
                     <img src="images/evento 3 Kezia.jpg" alt="Momento do Evento" loading="lazy">
                     <div class="gallery-overlay">
                         <div class="gallery-icon">
@@ -760,7 +831,7 @@
                     </div>
                 </div>
 
-                <div class="gallery-item gallery-wide" data-aos="zoom-in" data-aos-delay="200">
+                <div class="gallery-item gallery-wide fade-in-bounce" data-aos="zoom-in" data-aos-delay="200">
                     <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800" alt="Momento do Evento" loading="lazy">
                     <div class="gallery-overlay">
                         <div class="gallery-icon">
@@ -774,7 +845,7 @@
                     </div>
                 </div>
 
-                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="300">
+                <div class="gallery-item fade-in-bounce" data-aos="zoom-in" data-aos-delay="300">
                     <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?w=600" alt="Momento do Evento" loading="lazy">
                     <div class="gallery-overlay">
                         <div class="gallery-icon">
@@ -788,7 +859,7 @@
                     </div>
                 </div>
 
-                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="400">
+                <div class="gallery-item fade-in-bounce" data-aos="zoom-in" data-aos-delay="400">
                     <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=600" alt="Momento do Evento" loading="lazy">
                     <div class="gallery-overlay">
                         <div class="gallery-icon">
@@ -802,7 +873,7 @@
                     </div>
                 </div>
 
-                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="500">
+                <div class="gallery-item fade-in-bounce" data-aos="zoom-in" data-aos-delay="500">
                     <img src="https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=600" alt="Momento do Evento" loading="lazy">
                     <div class="gallery-overlay">
                         <div class="gallery-icon">
