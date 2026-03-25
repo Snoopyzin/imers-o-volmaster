@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imersão Volmaster - Evento de Capacitação Automotiva</title>
+    <meta name="description" content="A Imersão Volmaster conecta empreendedores, investidores e profissionais de tecnologia em um dia de imersão em inovação, networking e experiências exclusivas.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style-new.css">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" defer></script>
+    <script src="js/script-new.js" defer></script>
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <div class="preloader-logo">
+                <img src="images/VOLMASTER 01.png" alt="Imersão Volmaster">
+            </div>
+            <div class="preloader-spinner">
+                <div class="spinner-ring"></div>
+                <div class="spinner-ring"></div>
+                <div class="spinner-ring"></div>
+            </div>
+            <p class="preloader-text">Carregando Experiência...</p>
+        </div>
+    </div>
+
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <img src="images/VOLMASTER 01.png" alt="Imersão Volmaster" class="logo-img">
+            </div>
+            
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home">Sobre</a></li>
+                <li><a href="#publico">Público</a></li>
+                <li><a href="#palestrantes">Palestrantes</a></li>
+                <li><a href="#schedule">Programação</a></li>
+                <li><a href="#sponsors">Patrocínio</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            
+            <div class="nav-cta">
+                <a href="#inscricao" class="btn-nav">
+                    Quero Participar
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="hero-gradient"></div>
+        
+        <div class="floating-shape shape-1"></div>
+        <div class="floating-shape shape-2"></div>
+        <div class="floating-shape shape-3"></div>
+        
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-logo">
+                    <img src="images/VOLMASTER 01.png" alt="Imersão Volmaster">
+                </div>
+                
+                <h1 class="hero-title">
+                    Imersão <span class="gold-text">Volmaster Tech</span>
+                </h1>
+                
+                <div class="hero-info">
+                    <div class="info-item">
+                        <span class="info-label">Data</span>
+                        <span class="info-value">12 de Setembro, 2026</span>
+                    </div>
+                    <div class="info-divider"></div>
+                    <div class="info-item">
+                        <span class="info-label">Local</span>
+                        <span class="info-value">Goiânia, GO</span>
+                    </div>
+                </div>
+                
+                <p class="hero-description">
+                    12 horas de imersão total com estratégias práticas, tecnologia de ponta e networking de alto nível para empresários e profissionais do setor automotivo.
+                </p>
+                
+                <!-- Ticket Preview -->
+                <div class="ticket-preview" data-aos="zoom-in" data-aos-delay="200">
+                    <a href="ingressos-novo.html" class="ticket-link">
+                        <img src="images/ticket evento.jpg" alt="Ingresso Imersão Volmaster Tech" class="ticket-image">
+                        <div class="ticket-overlay">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                                <line x1="12" y1="18" x2="12" y2="12"></line>
+                                <line x1="9" y1="15" x2="15" y2="15"></line>
+                            </svg>
+                            <span>Clique Para Garantir Seu Ingresso</span>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="countdown" id="countdown">
+                    <div class="countdown-item">
+                        <span class="countdown-value" id="days">000</span>
+                        <span class="countdown-label">Dias</span>
+                    </div>
+                    <div class="countdown-divider"></div>
+                    <div class="countdown-item">
+                        <span class="countdown-value" id="hours">00</span>
+                        <span class="countdown-label">Horas</span>
+                    </div>
+                    <div class="countdown-divider"></div>
+                    <div class="countdown-item">
+                        <span class="countdown-value" id="minutes">00</span>
+                        <span class="countdown-label">Minutos</span>
+                    </div>
+                    <div class="countdown-divider"></div>
+                    <div class="countdown-item">
+                        <span class="countdown-value" id="seconds">00</span>
+                        <span class="countdown-label">Segundos</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3️⃣ Texto explicativo + 1º Botão de ação -->
+    <section class="event-intro" id="sobre">
+        <div class="container">
+            <div class="intro-content" data-aos="fade-up">
+                <h2 class="intro-title">
+                    Transforme a Gestão da Sua Oficina em <span class="gradient-text">12 Horas de Imersão Total</span>
+                </h2>
+                <p class="intro-text">
+                    O <strong>Imersão Volmaster Tech</strong> é mais do que um evento: é um divisor de águas para empresários, gestores e profissionais do setor automotivo que querem <strong>sair da estagnação e alcançar um novo patamar</strong>.
+                </p>
+                <p class="intro-text">
+                    Durante <strong>12 horas intensas</strong>, você vai descobrir as estratégias exatas que transformam oficinas comuns em negócios de referência. Vamos mostrar como usar a tecnologia a seu favor, otimizar processos, aumentar a lucratividade e construir uma operação que funciona de forma previsível e escalável.
+                </p>
+                <p class="intro-text">
+                    Se você sente que trabalha muito e não vê os resultados que merece, se percebe o mercado mudando enquanto você fica para trás, ou se sabe que tem potencial mas não sabe como destravar o próximo nível — <strong>este evento foi feito para você</strong>.
+                </p>
+                
+                <div class="cta-box" data-aos="fade-up" data-aos-delay="100">
+                    <div class="cta-highlight">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg>
+                        <span>Últimas Vagas Disponíveis</span>
+                    </div>
+                    <a href="ingressos-novo.html" class="btn-primary btn-large">
+                        Quero Meu Ingresso Agora
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M4 10h12M12 6l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4️⃣ Para quem é o evento - NOVO DESIGN -->
+    <section class="target-audience-new" id="publico">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title-large">Pra Quem É o Evento</h2>
+                <p class="section-subtitle">
+                    Este evento foi desenhado especificamente para dois perfis de profissionais do setor automotivo
+                </p>
+            </div>
+            
+            <div class="audience-columns" data-aos="fade-up" data-aos-delay="100">
+                <!-- Coluna 1: Dono de oficina -->
+                <div class="audience-column">
+                    <div class="audience-column-header">
+                        <div class="audience-icon-wrapper">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="audience-column-title">Dono de oficina</h3>
+                    </div>
+                    
+                    <div class="checklist-items">
+                        <div class="checklist-item blue-check">
+                            <div class="checkbox"></div>
+                            <div class="checklist-line">Você que criou sua empresa do zero</div>
+                        </div>
+                        <div class="checklist-item blue-check">
+                            <div class="checkbox"></div>
+                            <div class="checklist-line">Cresceu muito e tem dificuldades na administração</div>
+                        </div>
+                        <div class="checklist-item blue-check">
+                            <div class="checkbox"></div>
+                            <div class="checklist-line">Sente que precisa avançar, ir para um novo nível</div>
+                        </div>
+                        <div class="checklist-item blue-check">
+                            <div class="checkbox"></div>
+                            <div class="checklist-line">Sabe que o que te trouxe até aqui não é suficiente para te levar além</div>
+                        </div>
+                        <div class="checklist-item blue-check">
+                            <div class="checkbox"></div>
+                            <div class="checklist-line">Está vendo o mercado mudar e você está estagnado</div>
+                        </div>
+                        <div class="checklist-item">
+                            <div class="checkbox"></div>
+                            <div class="checklist-line">Sabe que tem potencial e deseja ver sua empresa sendo referência</div>
+                        </div>
+                        <div class="checklist-item">
+                            <div class="checkbox"></div>
+                            <div class="checklist-line"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Coluna 2: Gerente e chefe de oficina, mecânicoa -->
+                <div class="audience-column">
+                    <div class="audience-column-header">
+                        <div class="audience-icon-wrapper">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="audience-column-title">Gerente e chefe de oficina, mecânicoa</h3>
+                    </div>
+                    
+                    <div class="checklist-items">
+                        <div class="checklist-item">
+                            <div class="checkbox"></div>
+                            <div class="checklist-line">Você que é um ótimo profissional, mas trabalha muito e ganha pouco</div>
+                        </div>
+                        <div class="checklist-item">
+                            <div class="checkbox"></div>
+                            <div class="checklist-line">Você que busca ser o melhor na sua área de atuação</div>
+                        </div>
+                        <div class="checklist-item">
+                            <div class="checkbox"></div>
+                            <div class="checklist-line">Você que é o principal interessado no seu crescimento profissional</div>
+                        </div>
+                        <div class="checklist-item">
+                            <div class="checkbox"></div>
+                            <div class="checklist-line">Você que não quer ficar parado no tempo e deseja acompanhar as evoluções</div>
+                        </div>
+                        <div class="checklist-item">
+                            <div class="checkbox"></div>
+                            <div class="checklist-line">Você que quer trabalhar menos e ganhar mais</div>
+                        </div>
+                        <div class="checklist-item">
+                            <div class="checkbox"></div>
+                            <div class="checklist-line">Você que sabe que o mundo é dos espertos, mas o mercado é dos que avançam</div>
+                        </div>
+                        <div class="checklist-item">
+                            <div class="checkbox"></div>
+                            <div class="checklist-line"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5️⃣ Palestrantes Section + 2º Botão de ação -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="0">
+                    <div class="stat-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <div class="stat-number" data-target="500">0</div>
+                    <div class="stat-label">Participantes Esperados</div>
+                </div>
+                
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                        </svg>
+                    </div>
+                    <div class="stat-number" data-target="20">0</div>
+                    <div class="stat-label">Palestrantes Expert</div>
+                </div>
+                
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                        </svg>
+                    </div>
+                    <div class="stat-number" data-target="12">0</div>
+                    <div class="stat-label">Horas de Conteúdo</div>
+                </div>
+                
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg>
+                    </div>
+                    <div class="stat-number" data-target="100">0</div>
+                    <div class="stat-label">% Networking</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">O Que Você Vai Ganhar</span>
+                <h2 class="section-title">Uma Experiência Transformadora</h2>
+                <p class="section-description">
+                    Prepare-se para uma imersão completa em tecnologia, negócios e inovação
+                </p>
+            </div>
+
+            <div class="benefits-grid">
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="benefit-number">01</div>
+                    <div class="benefit-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="benefit-title">Conhecimento Aplicado</h3>
+                    <p class="benefit-description">
+                        Aprenda com cases reais e estratégias que você pode implementar imediatamente no seu negócio
+                    </p>
+                </div>
+
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="benefit-number">02</div>
+                    <div class="benefit-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <h3 class="benefit-title">Networking de Alto Nível</h3>
+                    <p class="benefit-description">
+                        Conecte-se com líderes, investidores e empreendedores que estão moldando o futuro da tecnologia
+                    </p>
+                </div>
+
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="benefit-number">03</div>
+                    <div class="benefit-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="benefit-title">Tendências do Mercado</h3>
+                    <p class="benefit-description">
+                        Descubra as tecnologias emergentes e oportunidades que definirão os próximos anos
+                    </p>
+                </div>
+
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="benefit-number">04</div>
+                    <div class="benefit-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="benefit-title">Workshops Práticos</h3>
+                    <p class="benefit-description">
+                        Participe de sessões hands-on com ferramentas e metodologias de ponta
+                    </p>
+                </div>
+
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="benefit-number">05</div>
+                    <div class="benefit-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                        </svg>
+                    </div>
+                    <h3 class="benefit-title">Inspiração & Motivação</h3>
+                    <p class="benefit-description">
+                        Histórias reais de superação e sucesso que vão impulsionar sua jornada
+                    </p>
+                </div>
+
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="benefit-number">06</div>
+                    <div class="benefit-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                            <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                        </svg>
+                    </div>
+                    <h3 class="benefit-title">Certificado de Participação</h3>
+                    <p class="benefit-description">
+                        Comprove sua presença em um dos maiores eventos de tecnologia do ano
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Speakers Section -->
+    <section class="speakers" id="palestrantes">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">Conheça os Palestrantes</span>
+                <h2 class="section-title">PALESTRANTES EM DESTAQUE</h2>
+                <p class="section-description">
+                    Profissionais referência em suas áreas que vão compartilhar conhecimento e experiências
+                </p>
+            </div>
+            <div class="speakers-grid">
+                <div class="speaker-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="speaker-image">
+                        <img src="images/evento 1.jpeg" alt="Alan Campos" loading="lazy">
+                        <div class="speaker-overlay"></div>
+                    </div>
+                    <div class="speaker-info">
+                        <h3 class="speaker-name">Alan Campos</h3>
+                        <p class="speaker-role">Instrutor Técnico</p>
+                    </div>
+                </div>
+                <div class="speaker-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="speaker-image">
+                        <img src="images/evento 3 Kezia.jpg" alt="Kezia Campos" loading="lazy">
+                        <div class="speaker-overlay"></div>
+                    </div>
+                    <div class="speaker-info">
+                        <h3 class="speaker-name">Kezia Campos</h3>
+                        <p class="speaker-role">A definir</p>
+                    </div>
+                </div>
+                <div class="speaker-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="speaker-image">
+                        <img src="images/palestrante lais.jpeg" alt="Dr. Lais Torres" loading="lazy">
+                        <div class="speaker-overlay"></div>
+                    </div>
+                    <div class="speaker-info">
+                        <h3 class="speaker-name">Dra. Lais Torres</h3>
+                        <p class="speaker-role">Advogada especializada em oficinas de caminhão</p>
+                    </div>
+                </div>
+                <div class="speaker-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="speaker-image">
+                        <img src="images/palestrante bruno.jpeg" alt="Dr. Alex Brunno" loading="lazy">
+                        <div class="speaker-overlay"></div>
+                    </div>
+                    <div class="speaker-info">
+                        <h3 class="speaker-name">Dr. Alex Brunno</h3>
+                        <p class="speaker-role">Advogado Tributário</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section class="schedule" id="schedule">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">Seu Guia do Evento</span>
+                <h2 class="section-title">PROGRAMAÇÃO</h2>
+                <p class="section-description">
+                    Confira a programação completa do evento
+                </p>
+            </div>
+            <div class="schedule-date" data-aos="fade-up">12 Setembro 2026</div>
+            <div class="schedule-content" id="scheduleContent">
+                <div class="schedule-item" data-aos="fade-up" data-aos-delay="0">
+                    <div class="schedule-time">09:00 - 10:00</div>
+                    <div class="schedule-details">
+                        <h4>Abertura e Credenciamento</h4>
+                        <p>Recepção dos participantes e entrega de materiais</p>
+                    </div>
+                </div>
+                <div class="schedule-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="schedule-time">10:00 - 11:30</div>
+                    <div class="schedule-details">
+                        <h4>Palestra Principal</h4>
+                        <p>Conteúdo a ser definido</p>
+                    </div>
+                </div>
+                <div class="schedule-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="schedule-time">11:30 - 13:00</div>
+                    <div class="schedule-details">
+                        <h4>Workshop Técnico</h4>
+                        <p>Conteúdo a ser definido</p>
+                    </div>
+                </div>
+                <div class="schedule-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="schedule-time">13:00 - 14:00</div>
+                    <div class="schedule-details">
+                        <h4>Intervalo e Networking</h4>
+                        <p>Momento para networking e alimentação</p>
+                    </div>
+                </div>
+                <div class="schedule-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="schedule-time">14:00 - 16:00</div>
+                    <div class="schedule-details">
+                        <h4>Painéis de Discussão</h4>
+                        <p>Debates com especialistas da área</p>
+                    </div>
+                </div>
+                <div class="schedule-item" data-aos="fade-up" data-aos-delay="500">
+                    <div class="schedule-time">16:00 - 18:00</div>
+                    <div class="schedule-details">
+                        <h4>Encerramento e Sorteios</h4>
+                        <p>Considerações finais e premiações</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">Depoimentos</span>
+                <h2 class="section-title">O Que Dizem Sobre Nós</h2>
+                <p class="section-description">
+                    Veja o que participantes das edições anteriores compartilham
+                </p>
+            </div>
+
+            <div class="testimonials-slider" id="testimonialsSlider">
+                <div class="testimonial-card active">
+                    <div class="testimonial-content">
+                        <div class="testimonial-stars">
+                            ⭐⭐⭐⭐⭐
+                        </div>
+                        <p class="testimonial-text">
+                            "A Imersão Volmaster foi um divisor de águas para meu negócio. As conexões que fiz aqui resultaram em parcerias que transformaram completamente nossa operação. Recomendo para qualquer empreendedor que busca crescimento real."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="https://i.pravatar.cc/150?img=12" alt="João Silva">
+                            </div>
+                            <div class="author-info">
+                                <div class="author-name">João Silva</div>
+                                <div class="author-role">CEO, TechStart Brasil</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="testimonial-stars">
+                            ⭐⭐⭐⭐⭐
+                        </div>
+                        <p class="testimonial-text">
+                            "Conteúdo de altíssimo nível! Os palestrantes são referências no mercado e compartilham insights práticos que você pode aplicar no mesmo dia. Valeu cada segundo investido."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="https://i.pravatar.cc/150?img=47" alt="Maria Santos">
+                            </div>
+                            <div class="author-info">
+                                <div class="author-name">Maria Santos</div>
+                                <div class="author-role">Diretora de Inovação, InvestCorp</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="testimonial-stars">
+                            ⭐⭐⭐⭐⭐
+                        </div>
+                        <p class="testimonial-text">
+                            "Networking de verdade! Não é só trocar cartões, mas construir relacionamentos genuínos com pessoas que realmente estão fazendo acontecer no mercado. Voltei com 5 reuniões agendadas e 3 propostas de parceria."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="https://i.pravatar.cc/150?img=33" alt="Carlos Mendes">
+                            </div>
+                            <div class="author-info">
+                                <div class="author-name">Carlos Mendes</div>
+                                <div class="author-role">Founder, Digital Ventures</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonials-controls">
+                <button class="testimonial-prev" id="testimonialPrev">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                </button>
+                <div class="testimonials-dots" id="testimonialsDots"></div>
+                <button class="testimonial-next" id="testimonialNext">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">Perguntas Frequentes</span>
+                <h2 class="section-title">Tire Suas Dúvidas</h2>
+                <p class="section-description">
+                    Reunimos as principais questões sobre o evento
+                </p>
+            </div>
+
+            <div class="faq-grid">
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="0">
+                    <button class="faq-question">
+                        <span>Quem pode participar da Imersão Volmaster?</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="faq-icon">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>O evento é aberto para empreendedores, investidores, empresários, profissionais de tecnologia e qualquer pessoa interessada em inovação e transformação digital. Não é necessário ter conhecimento técnico avançado.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+                    <button class="faq-question">
+                        <span>Qual o formato do evento?</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="faq-icon">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>O evento é presencial e acontece durante um dia completo com palestras, painéis de discussão, workshops práticos e muito networking. Teremos coffee breaks e almoço inclusos no valor da inscrição.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                    <button class="faq-question">
+                        <span>O que está incluído na inscrição?</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="faq-icon">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sua inscrição inclui: acesso a todas as palestras e workshops, kit de boas-vindas, coffee breaks, almoço, material de apoio digital, certificado de participação e acesso à área de networking exclusiva.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                    <button class="faq-question">
+                        <span>Posso cancelar minha inscrição?</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="faq-icon">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sim! Você pode cancelar sua inscrição até 30 dias antes do evento e receber 100% do valor de volta. Entre 30 e 15 dias, o reembolso é de 50%. Após esse período, não há reembolso, mas você pode transferir para outra pessoa.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+                    <button class="faq-question">
+                        <span>Haverá vagas limitadas?</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="faq-icon">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sim! Para garantir uma experiência de qualidade e networking efetivo, limitamos o número de participantes a 500 pessoas. As inscrições se esgotam rapidamente, então recomendamos garantir sua vaga o quanto antes.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="500">
+                    <button class="faq-question">
+                        <span>Como posso me tornar patrocinador?</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="faq-icon">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Temos diversas cotas de patrocínio disponíveis. Entre em contato através do email patrocinio@imersaovolmaster.com ou pelo telefone (62) 99999-9999 que nossa equipe comercial apresentará as opções e benefícios.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">Galeria</span>
+                <h2 class="section-title">Momentos Inesquecíveis</h2>
+                <p class="section-description">
+                    Registros das edições anteriores do evento
+                </p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="0">
+                    <img src="images/evento 1.jpeg" alt="Momento do Evento" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                <line x1="11" y1="8" x2="11" y2="14"></line>
+                                <line x1="8" y1="11" x2="14" y2="11"></line>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="images/evento 3 Kezia.jpg" alt="Momento do Evento" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                <line x1="11" y1="8" x2="11" y2="14"></line>
+                                <line x1="8" y1="11" x2="14" y2="11"></line>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item gallery-wide" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800" alt="Momento do Evento" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                <line x1="11" y1="8" x2="11" y2="14"></line>
+                                <line x1="8" y1="11" x2="14" y2="11"></line>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?w=600" alt="Momento do Evento" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                <line x1="11" y1="8" x2="11" y2="14"></line>
+                                <line x1="8" y1="11" x2="14" y2="11"></line>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="400">
+                    <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=600" alt="Momento do Evento" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                <line x1="11" y1="8" x2="11" y2="14"></line>
+                                <line x1="8" y1="11" x2="14" y2="11"></line>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="500">
+                    <img src="https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=600" alt="Momento do Evento" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                <line x1="11" y1="8" x2="11" y2="14"></line>
+                                <line x1="8" y1="11" x2="14" y2="11"></line>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="inscricao">
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up">
+                <h2 class="cta-title">Não Perca Esta Oportunidade</h2>
+                <p class="cta-description">
+                    Garanta sua vaga na maior imersão de tecnologia e inovação do Brasil
+                </p>
+                <div class="cta-price">
+                    <span class="price-label">Investimento</span>
+                    <span class="price-value">R$ 497</span>
+                    <span class="price-installment">ou 12x de R$ 49,70</span>
+                </div>
+                
+                <!-- Ticket Preview CTA -->
+                <div class="ticket-preview-cta" data-aos="flip-up" data-aos-delay="100">
+                    <a href="ingressos-novo.html" class="ticket-link-cta">
+                        <img src="images/ticket evento.jpg" alt="Ingresso Imersão Volmaster Tech" class="ticket-image-cta">
+                        <div class="ticket-badge">Clique para Garantir</div>
+                    </a>
+                </div>
+                
+                <div class="cta-buttons">
+                    <a href="#" class="btn-primary btn-large">
+                        Garantir Minha Vaga Agora
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                    <a href="#" class="btn-secondary btn-large">
+                        Quero Ser Patrocinador
+                    </a>
+                </div>
+                <div class="cta-guarantee">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                    </svg>
+                    <span>Garantia de 30 dias ou seu dinheiro de volta</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sponsors Section -->
+    <section class="sponsors" id="sponsors">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">Nossos Parceiros</span>
+                <h2 class="section-title">PATROCINADORES</h2>
+                <p class="section-description">
+                    Empresas que acreditam e investem em inovação
+                </p>
+            </div>
+            <div class="sponsors-grid">
+                <div class="sponsor-card">
+                    <a href="https://www.dimsport.it/" target="_blank" rel="noopener noreferrer" class="sponsor-logo">
+                        <img src="images/DIMSPORT EVENTO.png" alt="DIMSPORT - Engine Calibration Specialists">
+                    </a>
+                </div>
+                <div class="sponsor-card">
+                    <div class="sponsor-logo">
+                        <img src="https://via.placeholder.com/200x100/1e1e35/FFD700?text=Logo" alt="Patrocinador 2">
+                    </div>
+                </div>
+                <div class="sponsor-card">
+                    <div class="sponsor-logo">
+                        <img src="https://via.placeholder.com/200x100/1e1e35/FFD700?text=Logo" alt="Patrocinador 3">
+                    </div>
+                </div>
+                <div class="sponsor-card">
+                    <div class="sponsor-logo">
+                        <img src="https://via.placeholder.com/200x100/1e1e35/FFD700?text=Logo" alt="Patrocinador 4">
+                    </div>
+                </div>
+                <div class="sponsor-card">
+                    <div class="sponsor-logo">
+                        <img src="https://via.placeholder.com/200x100/1e1e35/FFD700?text=Logo" alt="Patrocinador 5">
+                    </div>
+                </div>
+                <div class="sponsor-card">
+                    <div class="sponsor-logo">
+                        <img src="https://via.placeholder.com/200x100/1e1e35/FFD700?text=Logo" alt="Patrocinador 6">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contato">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <img src="images/VOLMASTER 01.png" alt="Imersão Volmaster" class="footer-logo" loading="lazy" style="max-width: 120px;">
+                        <h3 style="margin-top: 1rem; font-size: 1.5rem; font-weight: 700;">IMERSÃO VOLMASTER</h3>
+                    </div>
+                    <p style="margin-top: 1rem; max-width: 300px;">Criando experiências memoráveis através de eventos de tecnologia e inovação.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#publico">Público</a></li>
+                        <li><a href="#palestrantes">Palestrantes</a></li>
+                        <li><a href="#schedule">Programação</a></li>
+                        <li><a href="#sponsors">Patrocinadores</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Informações</h3>
+                    <ul>
+                        <li>📍 Goiânia, GO</li>
+                        <li>📅 12 de Setembro 2026</li>
+                        <li>📧 contato@volmasterday.com</li>
+                        <li>📱 Entre em contato</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Imersão Volmaster. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
